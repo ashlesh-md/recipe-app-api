@@ -21,6 +21,5 @@ jobs:
         run: docker-compose run --rm app sh -c "python manage.py test"
 
       - name: Lint
-        run: |
-          docker-compose run --rm app sh -c "pip install flake8 && flake8" || exit 0
+        run: docker-compose run --rm app sh -c "pip install flake8 && flake8"
 
